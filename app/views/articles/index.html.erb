@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Wikinimous</h2>
+  <% @articles.each do |article| %>
+    <article>
+      <h2><%= link_to article.title, article %></h2>
+      <%= article.content[0..100] %>
+    </article>
+  <% end %>
+</div>
